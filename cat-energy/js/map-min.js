@@ -1,0 +1,1 @@
+var myMap;function init(){myMap=new ymaps.Map(document.querySelector(".address__map"),{center:[59.938631,30.323055],zoom:18},{}),academyPlacemark=new ymaps.Placemark([59.938631,30.323055],{hintContent:"Иконка академии"},{iconLayout:"default#imageWithContent",iconImageHref:"../img/map-pin.webp",iconImageSize:[70,70]}),myMap.geoObjects.add(academyPlacemark)}ymaps.ready(init);
