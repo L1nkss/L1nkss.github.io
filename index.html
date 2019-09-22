@@ -4,9 +4,304 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Сайт Портфолио</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <script src="https://kit.fontawesome.com/8c4a736b30.js"></script>
 </head>
 <body>
-  <h1>В работе!</h1>
+  <header class="header">
+    <div class="header__container">
+        <p class="header__text">Привет. Меня зовут </p>
+        <h2 class="header__title">Сергей Харлов</h2>
+        <p class="header__text">и я начинающий frontend разработчик</p>
+    </div>
+  </header>
+  <main class="main">
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="#">Навыки</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Портфолио</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Навыки -->
+    <section class="skills" id="skills">
+      <div class="skills__container">
+          <div class="title">
+            <h2 class="title__text">Навыки</h2>
+          </div>
+        <div class="skills__wrapper">
+          <div class="skills__list">
+              <img class="skills__icon" src="img/coding.svg" alt="Иконка ключевых навыков" width="60" >
+              <h4 class="title">Ключевые навыки: </h4>
+              <ul class="skill-list">
+                <li class="skills__item">Кроссбраузерная, валидная, семантичная, адаптивная верстка</li>
+                <li class="skills__item">Знаю HTML, CSS и JavaScript</li>
+                <li class="skills__item">Для именования классов использую методологию БЭМ</li>
+                <li class="skills__item">Небольшой опыт в графических редакторах: Adobe Photoshop/figma</li>
+                <li class="skills__item">Опыт работы с git, IDE - Visual Studio, gulp. Небольшой опыт сборки с webpack</li>
+                <li class="skills__item">Изучаю React</li>
+              </ul>
+          </div>
+          <div class="skills__list">
+              <img class="skills__icon" src="img/communication.svg" alt="Иконка soft навыков" width="60" >
+              <h4 class="title">Soft skills: </h4>
+              <ul class="skill-list">
+                <li class="skills__item">Знания английского языка, позволяющие читать и понимать техническую документацию</li>
+                <li class="skills__item">Постоянно обучаюсь самостоятельно и совершенствую свои знания</li>
+                <li class="skills__item">Готов осваивать необходимые технологии и инструменты</li>
+                <li class="skills__item">Подхожу к поставленным задачам со всей ответственностью</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="title">
+        <h2 class="title__text">Портфолио</h2>
+      </div>
+      <div class="portfolio__container">
+        <!-- Работа 1 -->
+        <article class="case case--reverse">
+          <div class="case__information">
+            <div class="case__wrapper">
+              <h3 class="case__title">Dad jokes</h3>
+              <p class="case__description">Личный pet-проект написанный на react'e. Использован API с сайта <a class="link" href="https://icanhazdadjoke.com/api">Icanhazdadjoke</a>.</p>
+              <ul class="case__tools-list">
+                <li class="case__tool">HTML5</li>
+                <li class="case__tool">Scss</li>
+                <li class="case__tool">Javascript</li>
+                <li class="case__tool">Git</li>
+                <li class="case__tool">Webpack</li>
+                <li class="case__tool">React</li>
+              </ul>
+            </div>
+            <div class="case__links">
+              <a
+                class="button button--mr"
+                href="https://l1nkss.github.io/Jokes/"
+                target="_blank">Демо
+              </a>
+              <a
+                class="button"
+                href="https://github.com/L1nkss/jokes"
+                target="_blank">Исходник
+              </a>
+            </div>
+          </div>
+          <div class="case__images">
+            <!-- Десктоп вариант -->
+            <div class="desktop" tabindex="0">
+              <picture>
+                  <source type="image/webp" srcset="img/case/jokes/desktop.webp">
+                  <img src="img/case/jokes/desktop.png" alt="">
+              </picture>
+            </div>
+          </div>
+        </article>
+        <!-- Работа 2 -->
+        <article class="case">
+          <div class="case__information">
+            <div class="case__wrapper">
+              <h3 class="case__title">Sedona</h3>
+              <p class="case__description">Sedona - сайт туристического городка в штате Аризона. Личный проект при прохождении курсов от HTML Academy. Адаптивная верстка трех страниц</p>
+              <ul class="case__tools-list">
+                <li class="case__tool">HTML5</li>
+                <li class="case__tool">Scss</li>
+                <li class="case__tool">Javascript</li>
+                <li class="case__tool">Git</li>
+                <li class="case__tool">Gulp</li>
+              </ul>
+            </div>
+            <div class="case__links">
+              <a
+                class="button button--mr"
+                href="https://l1nkss.github.io/sedona/"
+                target="_blank">Демо
+              </a>
+              <a
+                class="button"
+                href="https://github.com/L1nkss/52016-sedona-1"
+                target="_blank">Исходник
+              </a>
+            </div>
+          </div>
+          <div class="case__images">
+            <!-- Десктоп вариант -->
+            <div class="desktop" tabindex="0">
+              <picture>
+                <source type="image/webp" srcset="img/case/sedona/desktop.webp">
+                <img src="img/case/sedona/desktop.png" alt="">
+              </picture>
+            </div>
+            <!-- мобильный вариант -->
+            <div class="mobile" tabindex="0">
+              <div class="mobile__container">
+                <picture>
+                  <source type="image/webp" srcset="img/case//sedona//mobile.webp">
+                  <img src="img/case//sedona//mobile.png" alt="">
+                </picture>
+              </div>
+              <div class="mobile__menu">
+                <span class="mobile__button">
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- Работа 3 -->
+        <article class="case case--reverse">
+          <div class="case__information">
+            <div class="case__wrapper">
+              <h3 class="case__title">Cat-energy</h3>
+              <p>Cat-energy - интернет-магазин фитнес еды для котиков. Личный проект при прохождении курсов от HTML Academy. Адаптивная верстка трех страниц</p>
+              <ul class="case__tools-list">
+                <li class="case__tool">HTML5</li>
+                <li class="case__tool">Scss</li>
+                <li class="case__tool">Javascript</li>
+                <li class="case__tool">Git</li>
+                <li class="case__tool">Gulp</li>
+              </ul>
+            </div>
+            <div class="case__links">
+              <a
+                class="button button--mr"
+                href="https://l1nkss.github.io/catEnergy/"
+                target="_blank">Демо
+              </a>
+              <a
+                class="button"
+                href="https://github.com/L1nkss/52016-cat-energy-16"
+                target="_blank">Исходник
+              </a>
+            </div>
+          </div>
+          <div class="case__images">
+            <!-- Десктоп вариант -->
+            <div class="desktop" tabindex="0">
+              <picture>
+                <source type="image/webp" srcset="img/case/cat-energy/desktop.webp">
+                <img src="img/case//cat-energy/desktop.png" alt="">
+              </picture>
+            </div>
+            <!-- мобильный вариант -->
+            <div class="mobile mobile--reverse" tabindex="0">
+              <div class="mobile__container">
+                <picture>
+                  <source type="image/webp" srcset="img/case/cat-energy/mobile.webp">
+                  <img src="img/case/cat-energy/mobile.png" alt="">
+                </picture>
+              </div>
+              <div class="mobile__menu">
+                <span class="mobile__button">
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- Работа 4 -->
+        <article class="case">
+          <div class="case__information">
+            <div class="case__wrapper">
+              <h3 class="case__title">Keksbooking</h3>
+              <p>Сайт подбора жилья в Токио. Личный проект при прохождении курсов от HTML Academy. Написан на стандарте es5.</p>
+              <ul class="case__tools-list">
+                <li class="case__tool">HTML5</li>
+                <li class="case__tool">CSS</li>
+                <li class="case__tool">Javascript</li>
+                <li class="case__tool">es5</li>
+                <li class="case__tool">AJAX</li>
+                <li class="case__tool">Git</li>
+                <li class="case__tool">Gulp</li>
+              </ul>
+            </div>
+            <div class="case__links">
+              <a
+                class="button button--mr"
+                href="https://l1nkss.github.io/keksbooking/"
+                target="_blank">Демо
+              </a>
+              <a
+                class="button"
+                href="https://github.com/L1nkss/52016-keksobooking-17"
+                target="_blank">Исходник
+              </a>
+            </div>
+          </div>
+          <div class="case__images">
+            <!-- Десктоп вариант -->
+            <div class="desktop" tabindex="0">
+              <picture>
+                <source type="image/webp" srcset="img/case/keksbooking/keksbooking.webp">
+                <img src="img/case/keksbooking/keksbooking.png" alt="">
+              </picture>
+            </div>
+          </div>
+        </article>
+        <!-- Работа 5 -->
+        <article class="case case--reverse">
+          <div class="case__information">
+            <div class="case__wrapper">
+              <h3 class="case__title">Todo list</h3>
+              <p>Простенький todo list написанный в процессе изучения react'a</p>
+              <ul class="case__tools-list">
+                <li class="case__tool">HTML5</li>
+                <li class="case__tool">Css</li>
+                <li class="case__tool">Javascript</li>
+                <li class="case__tool">React</li>
+                <li class="case__tool">Git</li>
+                <li class="case__tool">Webpack</li>
+              </ul>
+            </div>
+            <div class="case__links">
+              <a
+                class="button button--mr"
+                href="https://github.com/L1nkss/React"
+                target="_blank">Демо
+              </a>
+              <a
+                class="button"
+                href="https://l1nkss.github.io/React/"
+                target="_blank">Исходник
+              </a>
+            </div>
+          </div>
+          <div class="case__images">
+            <!-- Десктоп вариант -->
+            <div class="desktop" tabindex="0">
+              <picture>
+                <source type="image/webp" srcset="img/case/todo/todo.webp">
+                <img src="img/case/todo/todo.png" alt="">
+              </picture>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    </main>
+    <!-- Конец секции Портфолио -->
+    <footer class="footer" id="footer">
+      <div class="footer">
+        <div class="title">
+          <h2 class="title__text">Контакты</h2>
+        </div>
+        <div class="socials">
+          <a class="socials__link" href="tg://resolve?domain=kharlov_s">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="18"><path fill="currentColor" d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg>
+          </a>
+          <a class="socials__link" href="https://github.com/L1nkss">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="21"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  <script src="script/bundle.js"></script>
 </body>
 </html>
