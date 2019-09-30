@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+  <header class="header">
+    <div class="header__user user">
+      <div class="user__photo">
+        <img class="user__avatar" src="img/avatar.jpg" alt="Аватар пользователя">
+      </div>
+      <p class="user__name">Username</p>
+    </div>
+    <div class="header__actions">
+      <button class="header__change-button">Change</button>
+      <button class="header__menu-toggle toggle">
+        <span class="toggle__circle"></span>
+      </button>
+      <nav class="header__menu">
+        <ul class="menu">
+          <li class="menu__item" class="">
+            <a class="menu__link" href="#">Menu item</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Menu item</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Menu item</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Menu item</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Menu item</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <form action="#" class="form">
+      <div class="form__setup">
+        <label class="form__label">
+          Настройка первая
+          <input class="form__input visually-hidden" type="checkbox">
+          <span class="form__custom-input"></span>
+        </label>
+      </div>
+
+      <div class="form__setup">
+        <label class="form__label">
+          Настройка вторая
+          <input class="form__input visually-hidden" type="checkbox" checked>
+          <span class="form__custom-input"></span>
+        </label>
+      </div>
+    </form>
+    <section class="information">
+      <div class="information__buttons">
+        <button class="information__button" data-card="card-1">07/2019</button>
+        <button class="information__button information__button--active" data-card="card-2">08/2019</button>
+        <button class="information__button" data-card="card-3">09/2019</button>
+      </div>
+      <div class="information__result">
+        <!-- Первое окно -->
+        <div id="card-1" class="information__result-card setup setup--close">
+          <div class="setup__card">
+            <div class="setup__description">
+              <div class="setup__picture"></div>
+              <div class="setup__wrapper">
+                <h3 class="setup__title">Параметр</h3>
+                <p class="setup__text">Описание параметра</p>
+              </div>
+            </div>
+            <p class="setup__value">43</p>
+          </div>
+          <button class="setup__button">Вызвать модалку</button>
+        </div>
+        <!-- Конец первого окна -->
+
+        <!-- Второе окно -->
+        <div id="card-2" class="information__result-card setup">
+          <div class="setup__card">
+            <div class="setup__description">
+              <div class="setup__picture"></div>
+              <div class="setup__wrapper">
+                <h3 class="setup__title">Параметр</h3>
+                <p class="setup__text">Описание параметра</p>
+              </div>
+            </div>
+            <p class="setup__value">47</p>
+          </div>
+          <button class="setup__button">Вызвать модалку</button>
+        </div>
+        <!-- Конец второго окна -->
+
+        <!-- Третье окно -->
+        <div id="card-3" class="information__result-card setup setup--close">
+          <div class="setup__card">
+            <div class="setup__description">
+              <div class="setup__picture"></div>
+              <div class="setup__wrapper">
+                <h3 class="setup__title">Параметр</h3>
+                <p class="setup__text">Описание параметра</p>
+              </div>
+            </div>
+            <p class="setup__value">55</p>
+          </div>
+          <button class="setup__button">Вызвать модалку</button>
+        </div>
+        <!-- Конец третьего окна -->
+      </div>
+    </section>
+  </main>
+  <div class="modal-window">
+    <div class="modal-window__card modal">
+      <button class="modal__close-button"></button>
+      <h3 class="modal__title">Заголовок модального окна</h3>
+      <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus eget justo mollis facilisis eu non libero. Nunc pulvinar luctus sodales. Suspendisse nisi metus, ornare ut mauris ut, efficitur fringilla nisi. Suspendisse pretium magna augue, quis ultrices ex dignissim ac. Morbi nulla magna, varius faucibus risus a, dignissim finibus dui. Curabitur purus urna, bibendum mollis venenatis vitae, scelerisque nec massa. Quisque pellentesque lectus sit amet sodales ultricies. Quisque condimentum elit nulla, a tincidunt massa auctor in. </p>
+    </div>
+  </div>
+
+  </div>
+  <script src="script/index.js"></script>
+</body>
+</html>
