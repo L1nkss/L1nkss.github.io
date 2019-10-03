@@ -66,6 +66,7 @@
   <h1 class="visually-hidden">Тестовое задание от Modulbank</h1>
   <header class="header">
     <div class="header__wrapper">
+      <button class="button button--header"></button>
       <div class="header__search">
         <p class="header__logo">
           <svg width="24" height="24">
@@ -73,12 +74,14 @@
           </svg>
         </p>
         <form action="#" class="search">
-          <input class="search__input" id="search" type="text" placeholder="Поиск">
-          <label class="search__label" for="search">
-            <svg class="search__icon" width="18" height="18">
-              <use xlink:href="#search"></use>
-            </svg>
-          </label>
+          <div class="search__wrapper">
+            <input class="search__input" id="search" type="text" placeholder="Поиск">
+            <label class="search__label" for="search">
+              <svg class="search__icon" width="18" height="18">
+                <use xlink:href="#search"></use>
+              </svg>
+            </label>
+          </div>
         </form>
       </div>
       <div class="header__panel">
@@ -86,7 +89,7 @@
           <span class="burger__toggle"></span>
           <span class="visually-hidden">Переключатель состояния меню</span>
         </button>
-        <button class="button button--header"></button>
+        <!-- <button class="button button--header"></button> -->
         <nav class="header__navigation">
           <ul class="navigation">
             <li class="navigation__item">
